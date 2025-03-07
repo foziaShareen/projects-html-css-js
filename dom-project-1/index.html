@@ -5,43 +5,36 @@
 <meta http-equiv="content-type" content="text/html;
 ➥ charset=utf-8" />
 <title>Shopping list</title>
+<link rel="stylesheet" type="text/css" href="./styles.css" />
 <script src="./script.js"></script>
 
 
 </head>
 <body>
-<h1>What to buy</h1>
-<p title="a gentle reminder">Don’t forget to buy this stuff.</p>
+    <section> 
+<h1>Snapshot 🛍️</h1>
+
 <ul id="purchases">
-<li>A tin of beans</li>
-<li>Cheese</li>
-<li>Milk</li>
+<li>A tin of beans🫛</li>
+<li>Cheese🧀</li>
+<li>Milk🥛</li>
 </ul>
 <ol>
     <li>
-        <a  href="./images/w01A_Media.jpg" title="schools" onclick ="showPic(this); return false" >schools</a>
+        <a  href="./images/beans.jpg" title="beans" onclick ="showPic(this); return false" >beans</a>
+    </li> 
+    <li>
+        <a  href="./images/cheese.jpg" title="cheese" onclick ="showPic(this); return false" >cheese</a>
+    </li>
+    <li>
+        <a  href="./images/milk.jpg" title="milk" onclick ="showPic(this); return false" >milk</a>
     </li>
     <img id="placeholder" src="./images/placeholder.gif"  width="100" height="100" alt="placeholder" />
 </ol>
 <p id="description">choose an image</p>
-<!-- <script type="text/javascript">
-     var paras = document.getElementsByTagName('p')
-    var title = paras[0].getAttribute('title');
-    alert(title);
-    var items = document.getElementsByTagName("li");
-    for (var i=0; i < items.length; i++) {
-    alert(typeof items[i]);
-    }  
-   
 
- 
-</script> -->
-<script>
-    var paras = document.getElementsByTagName('p')
-    paras[0].setAttribute('title', 'goodbye');
-    var title = paras[0].getAttribute('title');
-    console.log(title);
-</script>
+</section>
+
 
 </body>
 </html>
