@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;
+➥ charset=utf-8" />
+<title>Shopping list</title>
+<script src="./script.js"></script>
+
+
+</head>
+<body>
+<h1>What to buy</h1>
+<p title="a gentle reminder">Don’t forget to buy this stuff.</p>
+<ul id="purchases">
+<li>A tin of beans</li>
+<li>Cheese</li>
+<li>Milk</li>
+</ul>
+<ol>
+    <li>
+        <a  href="./images/w01A_Media.jpg" title="schools" onclick ="showPic(this); return false" >schools</a>
+    </li>
+    <img id="placeholder" src="./images/placeholder.gif"  width="100" height="100" alt="placeholder" />
+</ol>
+<p id="description">choose an image</p>
+<!-- <script type="text/javascript">
+     var paras = document.getElementsByTagName('p')
+    var title = paras[0].getAttribute('title');
+    alert(title);
+    var items = document.getElementsByTagName("li");
+    for (var i=0; i < items.length; i++) {
+    alert(typeof items[i]);
+    }  
+   
+
+ 
+</script> -->
+<script>
+    var paras = document.getElementsByTagName('p')
+    paras[0].setAttribute('title', 'goodbye');
+    var title = paras[0].getAttribute('title');
+    console.log(title);
+</script>
+
+</body>
+</html>
